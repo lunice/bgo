@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BINGOGO</string>
+    <integer name="com_vk_sdk_AppId">5745899</integer>
+</resources>

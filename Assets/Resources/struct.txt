@@ -1,0 +1,48 @@
+[ // итерации розыгрыша (1..11)
+    {
+        tickets: [ // билеты (отправляются только в первой итерации(30 шар))                                                          [tag - T]
+            {
+                num: T, // номер билета                                                                                               [tag - N]
+                balls: [                                                                                                              [tag - B]
+                    N номер шара, 0 означает подкову,
+                    ...
+                ],
+            }
+            ...tickets
+        ],
+        pays: { // стоимость текущего и следующего шара, if next_ball == 0 -> конец роыгрыша                                         [tag - P]
+            current_ball: X,   // сколько потрачено на данный шар                                                                    [tag - C]
+            next_ball: Y      // сколько стоит следующий шар                                                                         [tag - N]
+        },
+        balls : [ // набор шаров и событий по шару в каждой итерации                                                                 [tag - B]
+            {
+                ball: N, // номер шара                                                                                               [tag - N]
+                tickets: [                                                                                                           [tag - T]
+                    {
+                        num: T // номер билета                                                                                       [tag - N]
+                        wins: [                                                                                                      [tag - W]
+                            {
+                                cat_id: X,                                                                                           [tag - C]
+                                templ_id: Y,                                                                                         [tag - T]
+                                win: W                                                                                               [tag - W]
+                            },
+                            ...wins
+                        ],
+                        prewins: [                                                                                                   [tag - P]
+                            {
+                                cat_id: X,                                                                                           [tag - C]
+                                templ_id: Y,                                                                                         [tag - T]
+                                prewin_ball_position: Z,   // недостающая позиция на билете                                          [tag - P]
+                                possible_prewin_win: W    // денежное награждение                                                    [tag - W]
+                            },
+                            ...prewins
+                        ]
+                    },
+                    ...tickets
+                ]
+            },
+            ...balls
+        ]
+    },
+    ...итерации розыгрыша
+]

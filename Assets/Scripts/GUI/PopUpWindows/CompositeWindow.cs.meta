@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4085a1e36cf6ea248aa4bba7b9a63549
+timeCreated: 1480112674
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - center: {fileID: 21300000, guid: 6152eb5968a6e664c8107613f595988b, type: 3}
+  - top: {fileID: 21300000, guid: d7fc1cbf3c70f364a86a79f774db9bb0, type: 3}
+  - left: {fileID: 21300000, guid: 86ab4625b58198a4bbcdca66fc2b594d, type: 3}
+  - right: {fileID: 21300000, guid: a6aca0316875af84492532205dadb67a, type: 3}
+  - bottom: {fileID: 21300000, guid: f33a47234c5e0264d8c5755b7fc36bd0, type: 3}
+  - topLeft: {fileID: 21300000, guid: 285be072474d5cd4fa3494efbfd63eda, type: 3}
+  - topRight: {fileID: 21300000, guid: 4ee69b968340fb8439d898420e52a31b, type: 3}
+  - bottomLeft: {fileID: 21300000, guid: 7740b0ef512ff0244b06afa4266d015b, type: 3}
+  - BottomRight: {fileID: 21300000, guid: 630622eed9e01d64a98a2c26e8706435, type: 3}
+  - lightOnWindow: {fileID: 21300000, guid: 91411ed9c7eadbe44a9cb2e28bc1ed57, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

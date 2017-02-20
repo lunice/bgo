@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ilot.bingogo">
+    <uses-sdk android:minSdkVersion="9" />
+    <application>
+        <!--<activity android:name=".VkLoginActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"-->
+            <!--android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">-->
+        <!--</activity>-->
+        <activity
+            android:name=".VkLoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/VK.Transparent"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen|layoutDirection|locale"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:scheme="vk5745899" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".VkLoginActivity" android:label="ServiceActivity" android:theme="@style/VK.Transparent" />-->
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
